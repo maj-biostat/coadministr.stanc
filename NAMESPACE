@@ -1,0 +1,6 @@
+exportPattern("ˆ[[:alpha:]]+")
+export(stanc_betabinhier)
+import(Rcpp)
+import(methods)
+importFrom(rstan,sampling)
+useDynLib(coadministr.stanc, .registration = TRUE)
